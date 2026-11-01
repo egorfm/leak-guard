@@ -53,10 +53,11 @@ dev = [
 ]
 
 [project.scripts]
+leak-guard = "git_leak_guard.cli:main"
 git-leak-guard = "git_leak_guard.cli:main"
 repo-guard = "git_leak_guard.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/egorfm/git-leak-guard"
-Repository = "https://github.com/egorfm/git-leak-guard.git"
-Issues = "https://github.com/egorfm/git-leak-guard/issues"
+Homepage = "https://github.com/egorfm/leak-guard"
+Repository = "https://github.com/egorfm/leak-guard.git"
+Issues = "https://github.com/egorfm/leak-guard/issues"
