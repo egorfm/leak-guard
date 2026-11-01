@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "git-leak-guard"
+version = "1.0.0"
+description = "A powerful, lightweight security scanner for personal public GitHub repositories to detect leaked API keys, tokens, and confidential secrets."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Egor", email = "cristalys044@gmail.com" }
+]
+keywords = [
+    "security",
+    "git",
+    "github",
+    "secrets",
+    "secret-scanner",
+    "leak-detector",
+    "api-keys",
+    "credentials",
+    "audit",
+    "infosec",
+    "devsecops"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Security",
+    "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = [
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "flake8>=6.0.0",
+]
+
+[project.scripts]
+git-leak-guard = "git_leak_guard.cli:main"
+repo-guard = "git_leak_guard.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/egorfm/git-leak-guard"
+Repository = "https://github.com/egorfm/git-leak-guard.git"
+Issues = "https://github.com/egorfm/git-leak-guard/issues"
