@@ -7,7 +7,7 @@ name = "git-leak-guard"
 version = "1.0.0"
 description = "A powerful, lightweight security scanner for personal public GitHub repositories to detect leaked API keys, tokens, and confidential secrets."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [
     { name = "Egor", email = "cristalys044@gmail.com" }
